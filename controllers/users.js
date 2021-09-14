@@ -197,7 +197,7 @@ export const getuserinfo = async (req, res) => {
     res.status(200).send({
       success: true,
       message: '',
-      result: { account: req.user.account, role: req.user.role, email: req.user.email }
+      result: { account: req.user.account, role: req.user.role, email: req.user.email, phonenumber: req.user.phonenumber, password: req.user.password }
     })
   } catch (error) {
     console.log(error)
